@@ -1,0 +1,25 @@
+
+# 名称
+name: CI
+
+on:
+  push:
+    tags: 
+    - '*'
+
+defaults:
+  run:
+    working-directory: /usr/src/app 
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: curl test
+        run: |
+          pwd
+          ls
+          echo 'test'
+    
