@@ -19,6 +19,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: curl test
         run: |
-          pwd
-          ls
-          echo $PATH
+          curl -H "Content-Type:application/json" -X POST -d '{"title": "测试", "text":"success"}' https://open.feishu.cn/open-apis/bot/hook/3e7fb607-c619-417e-ab24-a266cc04462d
