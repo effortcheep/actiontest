@@ -1,6 +1,6 @@
 
 # 名称
-name: CI
+name: tag
 
 on:
   push:
